@@ -1,0 +1,13 @@
+.jobList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .jobList li {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
