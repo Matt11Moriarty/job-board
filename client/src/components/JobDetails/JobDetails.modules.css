@@ -1,0 +1,21 @@
+.jobDetails {
+    width: 25%; /* Adjust as needed */
+    position: fixed;
+    right: 0;
+    height: 100%;
+    overflow: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .jobDetails h2 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .jobDetails p {
+    color: #666;
+    margin-bottom: 10px;
+  }
