@@ -21,7 +21,7 @@ const candidateSchema = new Schema({
         type: String,
         required: true
     },
-    job: {Job}
+    job: Job.schema
 });
 
 const Candidate = model('Candidate', candidateSchema);
