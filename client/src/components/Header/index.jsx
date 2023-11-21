@@ -1,15 +1,50 @@
 import styles from './Header.css';
+import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
+
+
 
 const Header = () => {
+  const currentPage = useLocation().pathname;
+
+
   return (
     <header className={styles.header}>
       <h1>Company Logo</h1>
       <nav>
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/jobs">Jobs</a></li>
-          <li><a href="/apply">Apply</a></li>
-          <li><a href="/login">Login</a></li>
+          <li>
+            <Link 
+                to="/"
+                className={currentPage === "/" ? "nav-link active text-info" : "nav-link text-light"}
+              >
+                Jobs 
+              </Link>
+          </li>
+          <li>
+            <Link 
+                to="/create-users"
+                className={currentPage === "/" ? "nav-link active text-info" : "nav-link text-light"}
+              >
+                Create Users 
+              </Link>
+          </li>
+          <li>
+            <Link 
+                to="/job-applications"
+                className={currentPage === "/" ? "nav-link active text-info" : "nav-link text-light"}
+              >
+                Job Applications 
+              </Link>
+          </li>
+          <li>
+            <Link 
+                to="/post-jobs"
+                className={currentPage === "/" ? "nav-link active text-info" : "nav-link text-light"}
+              >
+                Post Jobs
+              </Link>
+          </li>
         </ul>
       </nav>
     </header>

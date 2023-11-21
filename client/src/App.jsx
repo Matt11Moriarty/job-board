@@ -1,20 +1,25 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Header from './components/Header/index.jsx';
-import HomePage from './pages/HomePage.jsx';
-import LoginPage from './pages/LoginPage.jsx';
-import SingleJobPage from './pages/SingleJobPage.jsx';
+
+import { useState } from 'react'
+import { Outlet } from 'react-router-dom';
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import './App.css'
+import Header from './components/Header'
+
+function App() {
+  const [count, setCount] = useState(0)
+
 
 const App = () => {
   return (
-    <Router>
-      <Header />
-      <Switch>
-        <Route exact path="/" component={HomePage} />
-        <Route path="/login" component={LoginPage} />
-        <Route path="/job/:id" component={SingleJobPage} />
-      </Switch>
-    </Router>
+    <>
+      <main>
+        <Header />
+        <Outlet />
+        {/* <Footer /> */}
+      </main>
+    </>
+
   );
 }
 
