@@ -8,7 +8,7 @@ import React from 'react';
 import './AdminLoginForm.css';
 
 const LoginForm = () => {
-  const [userFormData, setUserFormData] = useState({ username: '', password: ''});
+  const [userFormData, setUserFormData] = useState({ userName: '', password: ''});
   const [validated] = useState(false);
   const [showAlert, setShowAlert] = useState(false);
   const [login, { error }] = useMutation(LOGIN_USER);
@@ -38,7 +38,7 @@ const LoginForm = () => {
     }
 
     setUserFormData({
-      username: '',
+      userName: '',
       password: ''
     })
   }
@@ -50,16 +50,16 @@ const LoginForm = () => {
           Something went wrong with your login credentials!
         </Alert>
         <Form.Group className='mb-3'>
-          <Form.Label htmlFor='email'>Email</Form.Label>
+          <Form.Label htmlFor='userName'>Username</Form.Label>
           <Form.Control
             type='text'
-            placeholder='Your email'
-            name='email'
+            placeholder='Your username'
+            name='userName'
             onChange={handleInputChange}
-            value={userFormData.email}
+            value={userFormData.userName}
             required
           />
-          <Form.Control.Feedback type='invalid'>Email is required!</Form.Control.Feedback>
+          <Form.Control.Feedback type='invalid'>userName is required!</Form.Control.Feedback>
         </Form.Group>
 
         <Form.Group className='mb-3'>
@@ -75,7 +75,7 @@ const LoginForm = () => {
           <Form.Control.Feedback type='invalid'>Password is required!</Form.Control.Feedback>
         </Form.Group>
         <Button
-          disabled={!(userFormData.email && userFormData.password)}
+          disabled={!(userFormData.userName && userFormData.password)}
           type='submit'
           variant='success'>
           Submit
