@@ -1,6 +1,6 @@
 const { Schema, model } = require('mongoose');
 
-const jobSchema = require('./Job')
+const Job = require('./Job')
 
 const candidateSchema = new Schema({
     firstName: {
@@ -21,7 +21,7 @@ const candidateSchema = new Schema({
         type: String,
         required: true
     },
-    job: {jobSchema}
+    job: {Job}
 });
 
 const Candidate = model('Candidate', candidateSchema);

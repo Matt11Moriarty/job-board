@@ -1,0 +1,113 @@
+[
+    {
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "john.doe@example.com",
+      "phoneNumber": "123-456-7890",
+      "job": {
+        "jobTitle": "Chef",
+        "salary": 60000,
+        "jobDescription": "Responsible for preparing and cooking delicious meals."
+      }
+    },
+    {
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "email": "jane.smith@example.com",
+      "phoneNumber": "987-654-3210",
+      "job": {
+        "jobTitle": "Waiter",
+        "salary": 35000,
+        "jobDescription": "Provide excellent customer service to restaurant guests."
+      }
+    },
+    {
+      "firstName": "Alice",
+      "lastName": "Johnson",
+      "email": "alice.johnson@example.com",
+      "phoneNumber": "555-123-4567",
+      "job": {
+        "jobTitle": "Bartender",
+        "salary": 45000,
+        "jobDescription": "Mix and serve beverages according to recipes and standards."
+      }
+    },
+    {
+      "firstName": "Bob",
+      "lastName": "Anderson",
+      "email": "bob.anderson@example.com",
+      "phoneNumber": "777-888-9999",
+      "job": {
+        "jobTitle": "Dishwasher",
+        "salary": 30000,
+        "jobDescription": "Ensure cleanliness and hygiene in the kitchen area."
+      }
+    },
+    {
+      "firstName": "Charlie",
+      "lastName": "Williams",
+      "email": "charlie.williams@example.com",
+      "phoneNumber": "333-444-5555",
+      "job": {
+        "jobTitle": "Manager",
+        "salary": 70000,
+        "jobDescription": "Manage restaurant operations and staff."
+      }
+    },
+    {
+      "firstName": "Emily",
+      "lastName": "Davis",
+      "email": "emily.davis@example.com",
+      "phoneNumber": "888-999-0000",
+      "job": {
+        "jobTitle": "Host/Hostess",
+        "salary": 32000,
+        "jobDescription": "Greet and seat guests, manage reservations."
+      }
+    },
+    {
+      "firstName": "Frank",
+      "lastName": "Miller",
+      "email": "frank.miller@example.com",
+      "phoneNumber": "222-333-4444",
+      "job": {
+        "jobTitle": "Server",
+        "salary": 38000,
+        "jobDescription": "Take and deliver food and beverage orders."
+      }
+    },
+    {
+      "firstName": "Grace",
+      "lastName": "Thompson",
+      "email": "grace.thompson@example.com",
+      "phoneNumber": "111-222-3333",
+      "job": {
+        "jobTitle": "Busser",
+        "salary": 31000,
+        "jobDescription": "Clear and clean tables, assist servers."
+      }
+    },
+    {
+      "firstName": "Henry",
+      "lastName": "Wilson",
+      "email": "henry.wilson@example.com",
+      "phoneNumber": "666-777-8888",
+      "job": {
+        "jobTitle": "Kitchen Staff",
+        "salary": 34000,
+        "jobDescription": "Assist in various kitchen tasks."
+      }
+    },
+    {
+      "firstName": "Isabel",
+      "lastName": "Brown",
+      "email": "isabel.brown@example.com",
+      "phoneNumber": "444-555-6666",
+      "job": {
+        "jobTitle": "Sous Chef",
+        "salary": 55000,
+        "jobDescription": "Assist the head chef in kitchen management."
+      }
+    }
+  ]
+  
