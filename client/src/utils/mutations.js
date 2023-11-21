@@ -1,3 +1,4 @@
+
 import { gql } from "@apollo/client";
 
 export const CREATE_USER = gql`
@@ -23,6 +24,36 @@ export const CREATE_JOB = gql`
   }
 `;
 
+export const CREATE_CANDIDATE = gql`
+  mutation createCandidate(
+    $firstName: String!
+    $lastName: String!
+    $email: String!
+    $phoneNumber: String!
+    $jobTitle: String!
+    $salary: Int!
+    $jobDescription: String!
+  ) {
+    createCandidate(
+      firstName: $firstName
+      lastName: $lastName
+      email: $email
+      phoneNumber: $phoneNumber
+      jobTitle: $jobTitle
+    ) {
+      _id
+      firstName
+      lastName
+      email
+      phoneNumber
+      job {
+        _id
+       
+      }
+    }
+  }
+`;
+
 export const REMOVE_USER = gql`
   mutation removeUser($userId: ID!) {
     removeUser(userId: $userId) {
@@ -41,6 +72,16 @@ export const REMOVE_JOB = gql`
   }
 `;
 
+export const REMOVE_CANDIDATE = gql`
+  mutation removeCandidate($candidateId: ID!) {
+    removeCandidate(candidateId: $candidateId) {
+      _id
+      firstName
+      lastName
+    }
+  }
+`;
+
 export const LOGIN_USER = gql`
   mutation Login($username: String!, $password: String!) {
     login(username: $username, password: $password) {
@@ -52,3 +93,4 @@ export const LOGIN_USER = gql`
     }
   }
 `;
+
