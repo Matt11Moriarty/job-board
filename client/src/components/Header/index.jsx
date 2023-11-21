@@ -1,5 +1,4 @@
-import styles from './Header.module.css';
-
+import styles from './Header.css';
 
 const Header = () => {
   return (
@@ -10,6 +9,7 @@ const Header = () => {
           <li><a href="/">Home</a></li>
           <li><a href="/jobs">Jobs</a></li>
           <li><a href="/apply">Apply</a></li>
+          <li><a href="/login">Login</a></li>
         </ul>
       </nav>
     </header>

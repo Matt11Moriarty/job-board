@@ -1,0 +1,21 @@
+.applyForm {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  margin: auto;
+}
+
+.applyForm label {
+  margin-bottom: 10px;
+}
+
+.applyForm input[type="text"],
+.applyForm input[type="tel"],
+.applyForm input[type="email"] {
+  padding: 5px;
+}
+
+.applyForm input[type="submit"] {
+  margin-top: 10px;
+  padding: 5px;
+}

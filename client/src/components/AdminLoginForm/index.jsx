@@ -1,19 +1,20 @@
-import styles from './AdminLoginForm.module.css';
+import React from 'react';
+import './LoginForm.css';
 
-const SignIn = () => {
-    return (
-      <form className={styles.adminLoginForm}>
-        <label>
-          Username:
-          <input type="text" name="username" />
-        </label>
-        <label>
-          Password:
-          <input type="password" name="password" />
-        </label>
-        <input type="submit" value="Sign In" />
-      </form>
-    );
-  };
-  
-  export default SignIn;
+const LoginForm = () => {
+  return (
+    <form className="loginForm">
+      <label>
+        Username:
+        <input type="text" name="username" />
+      </label>
+      <label>
+        Password:
+        <input type="password" name="password" />
+      </label>
+      <input type="submit" value="Log In" />
+    </form>
+  );
+};
+
+export default LoginForm;

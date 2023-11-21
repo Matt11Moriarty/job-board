@@ -1,4 +1,4 @@
-import styles from "./JobListItem.module.css";
+import styles from './JobListItem.css';
 
 const JobListItem = ({ job }) => {
     return (
