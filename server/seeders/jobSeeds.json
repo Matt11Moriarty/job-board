@@ -1,0 +1,53 @@
+[
+    {
+      "jobTitle": "Chef",
+      "salary": 60000,
+      "jobDescription": "Responsible for preparing and cooking delicious meals."
+    },
+    {
+      "jobTitle": "Waiter",
+      "salary": 35000,
+      "jobDescription": "Provide excellent customer service to restaurant guests."
+    },
+    {
+      "jobTitle": "Bartender",
+      "salary": 45000,
+      "jobDescription": "Mix and serve beverages according to recipes and standards."
+    },
+    {
+      "jobTitle": "Dishwasher",
+      "salary": 30000,
+      "jobDescription": "Ensure cleanliness and hygiene in the kitchen area."
+    },
+    {
+      "jobTitle": "Manager",
+      "salary": 70000,
+      "jobDescription": "Manage restaurant operations and staff."
+    },
+    {
+      "jobTitle": "Host/Hostess",
+      "salary": 32000,
+      "jobDescription": "Greet and seat guests, manage reservations."
+    },
+    {
+      "jobTitle": "Server",
+      "salary": 38000,
+      "jobDescription": "Take and deliver food and beverage orders."
+    },
+    {
+      "jobTitle": "Busser",
+      "salary": 31000,
+      "jobDescription": "Clear and clean tables, assist servers."
+    },
+    {
+      "jobTitle": "Kitchen Staff",
+      "salary": 34000,
+      "jobDescription": "Assist in various kitchen tasks."
+    },
+    {
+      "jobTitle": "Sous Chef",
+      "salary": 55000,
+      "jobDescription": "Assist the head chef in kitchen management."
+    }
+  ]
+  
