@@ -1,16 +1,19 @@
-import styles from './JobList.css';
-
+import { Link } from 'react-router-dom';
+import './JobList.css';
+import jobs from '../../../../server/seeders/jobSeeds.json';
 
 const JobList = () => {
-    const jobs = ['Job 1', 'Job 2', 'Job 3']; // Replace with real data
-  
-    return (
-      <ul className={styles.jobList}>
-        {jobs.map((job, index) => (
-          <li key={index}>{job}</li>
-        ))}
-      </ul>
-    );
-  };
-  
-  export default JobList;
+  return (
+    <div className="jobList">
+      {jobs.map((job, index) => (
+        <Link key={index} to={`/job/${job.jobTitle}`} className="jobItem">
+          <h2>{job.jobTitle}</h2>
+          <p>Salary: {job.salary}</p>
+          <p>{job.jobDescription}</p>
+        </Link>
+      ))}
+    </div>
+  );
+};
+
+export default JobList;
