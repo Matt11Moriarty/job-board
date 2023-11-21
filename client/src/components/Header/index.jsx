@@ -1,6 +1,7 @@
+import styles from './Header.css';
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import styles from './Header.module.css';
+
 
 
 const Header = () => {

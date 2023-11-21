@@ -1,3 +1,7 @@
+import React from 'react';
+import Header from '../components/Header/index.jsx';
+import Hero from '../components/Hero/index.jsx';
+import Jobs from '../components/JobList/index.jsx';
 
 
 const HomePage = () => {
@@ -17,5 +21,6 @@ const HomePage = () => {
         </div>
     )
 }
+
 
 export default HomePage;

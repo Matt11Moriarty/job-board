@@ -1,3 +1,4 @@
+
 import { useState } from 'react'
 import { Outlet } from 'react-router-dom';
 import reactLogo from './assets/react.svg'
@@ -8,6 +9,8 @@ import Header from './components/Header'
 function App() {
   const [count, setCount] = useState(0)
 
+
+const App = () => {
   return (
     <>
       <main>
@@ -16,7 +19,8 @@ function App() {
         {/* <Footer /> */}
       </main>
     </>
+
   );
 }
 
-export default App
+export default App;
