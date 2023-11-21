@@ -27,6 +27,7 @@ type Query {
 }
 
 type Mutation {
+    login(username: String!, password: String!): Auth
     createUser(userName: String!, password: String!): Auth
     createJob(jobTitle: String!, salary: Int!, jobDescription: String!): Job
     removeUser: User
