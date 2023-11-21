@@ -83,12 +83,12 @@ export const REMOVE_CANDIDATE = gql`
 `;
 
 export const LOGIN_USER = gql`
-  mutation Login($username: String!, $password: String!) {
-    login(username: $username, password: $password) {
+  mutation Login($userName: String!, $password: String!) {
+    login(userName: $userName, password: $password) {
       token
       user {
         _id
-        username
+        userName
       }
     }
   }
