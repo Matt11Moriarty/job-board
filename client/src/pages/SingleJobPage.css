@@ -1,0 +1,24 @@
+.jobTitle {
+    flex: 1;
+    border: 1px solid black;
+    padding: 20px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.applyForm {
+    border: 2px solid black;
+    flex: 1;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.singleJobPage {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}

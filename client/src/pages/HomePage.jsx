@@ -1,14 +1,12 @@
 import React from 'react';
-import Header from '../components/Header';
 import Hero from '../components/Hero';
-import Jobs from '../components/JobList';
+// import About from '../components/About';
 
 const HomePage = () => {
     return (
         <div>
             <Hero />
-            <h1>Featured Jobs</h1>
-            <Jobs />
+            {/* <About /> */}
         </div>
     );
 }

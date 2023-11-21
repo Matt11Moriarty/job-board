@@ -1,4 +1,5 @@
-const { gql } = require('@apollo/client');
+
+import { gql } from "@apollo/client";
 
 export const CREATE_USER = gql`
   mutation createUser($userName: String!, $password: String!) {
@@ -80,3 +81,16 @@ export const REMOVE_CANDIDATE = gql`
     }
   }
 `;
+
+export const LOGIN_USER = gql`
+  mutation Login($username: String!, $password: String!) {
+    login(username: $username, password: $password) {
+      token
+      user {
+        _id
+        username
+      }
+    }
+  }
+`;
+

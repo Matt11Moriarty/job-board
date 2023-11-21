@@ -12,6 +12,8 @@ import CreateUsers from './pages/CreateUsers';
 import JobApplications from './pages/JobApplications';
 import PostJobs from './pages/PostJobs';
 import LoginPage from './pages/LoginPage';
+import SingleJobPage from './pages/SingleJobPage';
+import AllJobs from './pages/AllJobs';
 
 const router = createBrowserRouter([
   {
@@ -37,6 +39,14 @@ const router = createBrowserRouter([
       {
         path: '/login',
         element: <LoginPage />
+      },
+      {
+        path: '/job/:title',
+        element: <SingleJobPage />
+      },
+      {
+        path: '/jobs',
+        element: <AllJobs />
       }
     ]
   }
