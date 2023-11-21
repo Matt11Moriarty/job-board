@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Outlet } from 'react-router-dom';
 import {
   ApolloClient,
@@ -37,10 +37,19 @@ const client = new ApolloClient({
 
 
 const App = () => {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  useEffect(() => {
+    const token = localStorage.getItem('id_token');
+    if (token) {
+      setIsLoggedIn(true);
+    }
+  }, []);
+
   return (
     <main>
       <ApolloProvider client={client}>
-      <Header />
+      <Header isLoggedIn={isLoggedIn}/>
       <Outlet />
       <Footer />
       </ApolloProvider>
