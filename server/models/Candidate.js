@@ -17,6 +17,10 @@ const candidateSchema = new Schema({
         required: true,
         match: [/.+@.+\..+/, 'Must match an email address!']
     },
+    phoneNumber: {
+        type: String,
+        required: true
+    },
     job: {jobSchema}
 });
 
