@@ -15,7 +15,6 @@ type Job {
     jobTitle: String
     salary: Int
     jobDescription: String
-
 }
 
 type Candidate {
@@ -26,6 +25,12 @@ type Candidate {
     phoneNumber: String
     job: Job
   }
+
+input JobInput {
+    jobTitle: String!
+    salary: Int!
+    jobDescription: String!
+}
 
 type Query {
     getAllUsers: [User]!
@@ -40,13 +45,13 @@ type Query {
 type Mutation {
     login(userName: String!, password: String!): Auth
     createUser(userName: String!, password: String!): Auth
-    createJob(jobTitle: String!, salary: Int!, jobDescription: String!): Job
+    createJob(job: JobInput!): Job
     createCandidate(
         firstName: String!
         lastName: String!
         email: String!
         phoneNumber: String!
-        jobTitle: String!
+        job: JobInput!
       ): Candidate
     removeUser(userId: ID!): User
     removeJob(jobId: ID!): Job
