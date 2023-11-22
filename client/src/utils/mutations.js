@@ -25,15 +25,18 @@ export const CREATE_JOB = gql`
 `;
 
 export const CREATE_CANDIDATE = gql`
-mutation createCandidate($firstName: String!, $lastName: String!, $email: String!, $phoneNumber: String!, $jobTitle: String!) {
-  createCandidate(firstName: $firstName, lastName: $lastName, email: $email, phoneNumber: $phoneNumber, jobTitle: $jobTitle) {
+mutation createCandidate($firstName: String!, $lastName: String!, $email: String!, $phoneNumber: String!, $job: JobInput!) {
+  createCandidate(firstName: $firstName, lastName: $lastName, email: $email, phoneNumber: $phoneNumber, job: $job) {
     _id
     firstName
     lastName
     email
     phoneNumber
     job {
+      _id
       jobTitle
+      salary
+      jobDescription
     }
   }
 }
