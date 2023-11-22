@@ -18,8 +18,7 @@ app.use(cors());
 // Use body parser middleware
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
+
 
 const startApolloServer = async () => {
   const server = new ApolloServer({

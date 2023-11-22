@@ -1,0 +1,28 @@
+.applications-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.applications-table th,
+.applications-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.applications-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.applications-table tr:hover { /* new */
+    transform: scale(1.02);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+.applications-table a {
+    color: inherit;
+    text-decoration: none;
+}

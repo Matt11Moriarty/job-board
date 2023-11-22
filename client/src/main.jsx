@@ -14,6 +14,7 @@ import PostJobs from './pages/PostJobs';
 import LoginPage from './pages/LoginPage';
 import SingleJobPage from './pages/SingleJobPage';
 import AllJobs from './pages/AllJobs';
+import SingleApplication from './pages/SingleApplication';
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
       {
         path: '/job-applications',
         element: <JobApplications />
+      },
+      {
+        path: '/job-applications/:firstName',
+        element: <SingleApplication />
       },
       {
         path: '/post-jobs',
