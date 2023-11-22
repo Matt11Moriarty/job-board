@@ -25,33 +25,18 @@ export const CREATE_JOB = gql`
 `;
 
 export const CREATE_CANDIDATE = gql`
-  mutation createCandidate(
-    $firstName: String!
-    $lastName: String!
-    $email: String!
-    $phoneNumber: String!
-    $jobTitle: String!
-    $salary: Int!
-    $jobDescription: String!
-  ) {
-    createCandidate(
-      firstName: $firstName
-      lastName: $lastName
-      email: $email
-      phoneNumber: $phoneNumber
-      jobTitle: $jobTitle
-    ) {
-      _id
-      firstName
-      lastName
-      email
-      phoneNumber
-      job {
-        _id
-       
-      }
+mutation createCandidate($firstName: String!, $lastName: String!, $email: String!, $phoneNumber: String!, $jobTitle: String!) {
+  createCandidate(firstName: $firstName, lastName: $lastName, email: $email, phoneNumber: $phoneNumber, jobTitle: $jobTitle) {
+    _id
+    firstName
+    lastName
+    email
+    phoneNumber
+    job {
+      jobTitle
     }
   }
+}
 `;
 
 export const REMOVE_USER = gql`

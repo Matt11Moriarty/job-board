@@ -6,6 +6,22 @@
     {
       "userName": "jane_smith",
       "password": "securepass456"
+    },
+    {
+      "userName": "mmtester",
+      "password": "test123"
+    },
+    {
+      "userName": "wktester",
+      "password": "test123"
+    },
+    {
+      "userName": "pjtester",
+      "password": "test123"
+    },
+    {
+      "userName": "artester",
+      "password": "test123"
     }
   ]
   
