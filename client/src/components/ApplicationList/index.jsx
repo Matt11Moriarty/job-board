@@ -2,39 +2,64 @@ import React from "react";
 import candidates from "../../../../server/seeders/candidateSeeds.json";
 import "./ApplicationList.css";
 import { useNavigate } from "react-router-dom";
+import { useQuery, gql } from "@apollo/client";
+
+const GET_CANDIDATES = gql`
+query GetAllCandidates {
+    getAllCandidates {
+      _id
+      email
+      firstName
+      lastName
+      phoneNumber
+      job {
+        jobTitle
+      }
+    }
+  }
+`;
+  
 
 const AllApplications = ({ filter, search }) => {
-  const navigate = useNavigate();
-  const candidatesByName = [...candidates].sort((a, b) =>
-    a.firstName.localeCompare(b.firstName)
-  );
-  const candidatesByJob = [...candidates].sort((a, b) =>
-    a.job.jobTitle.localeCompare(b.job.jobTitle)
-  );
+    const navigate = useNavigate();
+    const { loading, error, data } = useQuery(GET_CANDIDATES); // new line
+  
+    if (loading) return <p>Loading...</p>; // new line
+    if (error) return <p>Error :(</p>; // new line
+  
+    const candidates = data.getAllCandidates; // new line
+  
+    const candidatesByName = [...candidates].sort((a, b) =>
+      a.firstName.localeCompare(b.firstName)
+    );
+    const candidatesByJob = [...candidates].sort((a, b) =>
+      a.job.jobTitle.localeCompare(b.job.jobTitle)
+    );
+  
+    let filteredCandidates;
+  
+    const handleRowClick = (firstName) => {
+      navigate(`/job-applications/${firstName.toLowerCase()}`);
+    };
 
-  let filteredCandidates;
-
-  const handleRowClick = (firstName) => {
-    navigate(`/job-applications/${firstName.toLowerCase()}`);
-  };
-
-  switch (filter) {
-    case "name":
-      filteredCandidates = candidatesByName.filter((candidate) => {
-        const name = `${candidate.firstName} ${candidate.lastName}`;
-        return name.toLowerCase().includes(search.toLowerCase());
-      });
-      break;
-    case "job":
-      filteredCandidates = candidatesByJob.filter((candidate) => {
-        const jobTitle = candidate.job.jobTitle;
-        return jobTitle.toLowerCase().includes(search.toLowerCase());
-      });
-      break;
-    default:
-      filteredCandidates = candidates;
-      break;
-  }
+    switch (filter) {
+        case "name":
+          filteredCandidates = candidatesByName;
+          break;
+        case "job":
+          filteredCandidates = candidatesByJob;
+          break;
+        case "time":
+          filteredCandidates = [...candidates].sort((a, b) => a.dateApplied - b.dateApplied).reverse();
+          break;
+        default:
+          filteredCandidates = candidates;
+          break;
+      }
+      
+      filteredCandidates = filteredCandidates.filter((candidate) =>
+        `${candidate.firstName} ${candidate.lastName}`.toLowerCase().includes(search.toLowerCase())
+      );
 
   return (
     <table className="applications-table">

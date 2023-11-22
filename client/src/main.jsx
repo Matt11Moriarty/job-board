@@ -34,7 +34,7 @@ const router = createBrowserRouter([
         element: <JobApplications />
       },
       {
-        path: '/job-applications/:firstName',
+        path: '/job-applications/:id',
         element: <SingleApplication />
       },
       {
