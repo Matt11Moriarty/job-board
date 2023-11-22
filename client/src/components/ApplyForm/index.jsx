@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './ApplyForm.css';
+import { CREATE_CANDIDATE } from '../../utils/mutations';
 
 const ApplyForm = () => {
   const [name, setName] = useState('');
