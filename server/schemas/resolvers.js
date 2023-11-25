@@ -47,9 +47,12 @@ const resolvers = {
             const token = signToken(user);
             return { token, user };
         },
-        createJob: async (parent, { jobTitle, salary, jobDescription }) => {
-            const job = await Job.create({ jobTitle, salary, jobDescription });
-            return job;
+        createJob: async (parent, { job }) => {
+            const jobTitle = job.jobTitle;
+            const salary = job.salary;
+            const jobDescription = job.jobDescription;
+            const createdJob = await Job.create({ jobTitle, salary, jobDescription });
+            return createdJob;
         },
         createCandidate: async (parent, { firstName, lastName, email, phoneNumber, job }) => {
             const candidate = await Candidate.create({ firstName, lastName, email, phoneNumber, job});
