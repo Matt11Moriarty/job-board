@@ -14,14 +14,14 @@ export const CREATE_USER = gql`
 `;
 
 export const CREATE_JOB = gql`
-  mutation createJob($jobTitle: String!, $salary: Int!, $jobDescription: String!) {
-    createJob(jobTitle: $jobTitle, salary: $salary, jobDescription: $jobDescription) {
-        _id
-        jobTitle
-        salary
-        jobDescription
-    }
+mutation createJob($job: JobInput!) {
+  createJob(job: $job) {
+    _id
+    jobTitle
+    salary
+    jobDescription
   }
+}
 `;
 
 export const CREATE_CANDIDATE = gql`
