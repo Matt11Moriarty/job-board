@@ -43,14 +43,16 @@ const App = () => {
   }, []);
 
   return (
+    <>
+    <ApolloProvider client={client}>
+    <Header isLoggedIn={isLoggedIn}/>
     <main>
-      <ApolloProvider client={client}>
-      <Header isLoggedIn={isLoggedIn}/>
       <Outlet />
-      <Footer />
-      </ApolloProvider>
     </main>
-  );
+    <Footer />
+    </ApolloProvider>
+    </>
+  ); 
 }
 
 export default App;
