@@ -3,3 +3,12 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
+.job-applications > div {
+    margin-bottom: 12px;
+}
+
+.job-applications > div input, .job-applications > div select {
+    padding: 2px 4px;
+    margin: 0 18px 0 8px;
+}

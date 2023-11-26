@@ -11,6 +11,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+dl, ol, ul {
+  margin: 0;
+}
+
 * {
   font-family: 'Bitter', serif;
 }
@@ -46,7 +50,7 @@ main div {
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 4em;
   line-height: 1;
   text-align: center;
   margin-bottom: 48px;

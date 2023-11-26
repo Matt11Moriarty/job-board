@@ -1,21 +1,23 @@
-.applyForm {
+.applyForm, form {
+  width: 240px;
   display: flex;
-  flex-direction: column;
-  width: 200px;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: auto;
 }
 
-.applyForm label {
-  margin-bottom: 10px;
+.applyForm label, form label {
+  margin: 10px 0 2px;
+  width: 100%;
 }
 
-.applyForm input[type="text"],
-.applyForm input[type="tel"],
-.applyForm input[type="email"] {
+.applyForm input, form input {
   padding: 5px;
+  width: 100%;
 }
 
 .applyForm input[type="submit"] {
-  margin-top: 10px;
-  padding: 5px;
+  margin-top: 24px;
+  padding: 6px 18px;
+  width: max-content;
 }

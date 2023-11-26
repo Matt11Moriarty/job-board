@@ -41,20 +41,20 @@ const ApplyForm = ({ job }) => {
     <form className="applyForm" onSubmit={handleSubmit}>
       <label>
         First Name:
-        <input type="text" value={firstName} onChange={e => setFirstName(e.target.value)} />
       </label>
+      <input type="text" value={firstName} onChange={e => setFirstName(e.target.value)} />
       <label>
         Last Name:
-        <input type="text" value={lastName} onChange={e => setLastName(e.target.value)} />
-      </label>
+      </label>  
+      <input type="text" value={lastName} onChange={e => setLastName(e.target.value)} />
       <label>
         Phone:
-        <input type="tel" value={phoneNumber} onChange={e => setPhoneNumber(e.target.value)} />
-      </label>
+      </label> 
+      <input type="tel" value={phoneNumber} onChange={e => setPhoneNumber(e.target.value)} />
       <label>
         Email:
-        <input type="email" value={email} onChange={e => setEmail(e.target.value)} />
-      </label>
+      </label>  
+      <input type="email" value={email} onChange={e => setEmail(e.target.value)} />
       <input onClick={createCandidate} type="submit" value="Apply" />
     </form>
   );
