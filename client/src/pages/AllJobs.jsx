@@ -6,7 +6,7 @@ import JobList from '../components/JobList';
 const AllJobs = () => {
     return (
         <div>
-            <h1 className="featured-jobs-title">All Featured Jobs</h1>
+            <h1 className="featured-jobs-title">Featured Jobs</h1>
             <JobList />
         </div>
     );

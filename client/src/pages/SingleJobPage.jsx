@@ -23,7 +23,7 @@ const SingleJobPage = () => {
             </div>
             <div>
                 <div className="applyForm">
-                    <h2>Apply</h2>
+                    <h3>Apply</h3>
                     <ApplyForm job={job} />
                 </div>
                     <JobDetails job={job} />

@@ -4,7 +4,7 @@ import './JobDetails.css';
 const JobDetails = ({ job }) => {
   return (
     <div className="jobDetails">
-      <h2>Job Details</h2>
+      {/* <h2>Job Details</h2> */}
       <p><strong>Prerequisites:</strong> {job.prerequisites}</p>
       <p><strong>Job Description:</strong> {job.jobDescription}</p>
       <p><strong>Skill Requirements:</strong> {job.skills}</p>
