@@ -12,7 +12,7 @@ const Filter = ({ filter, setFilter, search, setSearch }) => {
     return (
         <div>
             <h1>All Applications</h1>
-            <div style={{ border: '1px solid black', padding: '10px', margin: '10px 0' }}>
+            <div>
                 <label>
                     Filter By:
                     <select value={filter} onChange={handleFilterChange}>
