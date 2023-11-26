@@ -26,9 +26,7 @@ const SingleJobPage = () => {
                     <h2>Apply</h2>
                     <ApplyForm job={job} />
                 </div>
-                <div className="jobDetails">
                     <JobDetails job={job} />
-                </div>
             </div>
         </div>
     );
