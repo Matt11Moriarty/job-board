@@ -5,7 +5,7 @@
 
 .applications-table th,
 .applications-table td {
-    border: 1px solid #ddd;
+    border: 1px solid var(--lightorange);
     padding: 8px;
 }
 
@@ -13,12 +13,13 @@
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
-    background-color: #4CAF50;
-    color: white;
+    background-color: var(--lightorange);
+    color: var(--darkblue);
 }
 
-.applications-table tr {
-    background-color: #FFFFFF;
+.applications-table tr, .applications-table td {
+    background-color: var(--silver);
+    color: var(--darkblue);
 }
 
 .applications-table tbody :hover { /* new */
