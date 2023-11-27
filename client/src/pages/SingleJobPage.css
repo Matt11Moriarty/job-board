@@ -8,7 +8,7 @@
 h3 {
     font-size: 1.5em;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 24px;
 }
 
 .singleJobPage {
@@ -18,10 +18,15 @@ h3 {
     justify-content: space-between;
 }
 
-.singleJobPage > div {
+.singleJobPage > div:nth-child(2) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: flex-start;
     width: 100%;
     margin: auto;
+}
+
+.singleJobPage .applyForm {
+    margin: 0 !important;
 }

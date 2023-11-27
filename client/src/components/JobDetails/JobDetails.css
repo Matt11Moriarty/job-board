@@ -1,15 +1,12 @@
 .jobDetails {
-  width: calc(100% - 260px);
+  width: calc(100% - 304px);
   height: 100%;
   overflow: auto;
-  padding: 20px;
-  margin-left: 20px;
-  background-color: #d0d0d0;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  margin-left: 24px;
 }
 
 .jobDetails p {
-  color: #666;
   margin-bottom: 36px;
   font-size: 1.25em;
 }
