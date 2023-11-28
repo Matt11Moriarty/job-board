@@ -6,10 +6,10 @@ import ManageJobsList from "../components/ManageJobsList";
 const PostJobs = () => {
     return (
         <div>
-            <h1>Post New Job:</h1>
+            <h1>Post New Job</h1>
             <CreateJobForm />
             <br />
-            <h1>Manage Jobs Here</h1>
+            <h1>Manage Jobs</h1>
             <ManageJobsList />
         </div>
     )

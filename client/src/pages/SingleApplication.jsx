@@ -71,7 +71,7 @@ const SingleApplication = () => {
 
   return (
     <div>
-      <h1>Name of Applicant</h1>
+      <h1>Applicant Details</h1>
       <form onSubmit={handleSubmit}>
         <label>
           First Name:
