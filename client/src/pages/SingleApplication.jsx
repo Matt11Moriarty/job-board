@@ -22,6 +22,7 @@ const GET_CANDIDATE = gql`
 const SingleApplication = () => {
   const { id } = useParams();
   const { loading, error, data } = useQuery(GET_CANDIDATE);
+  const [dateTime, setDateTime] = useState("");
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error :(</p>;
@@ -32,7 +33,6 @@ const SingleApplication = () => {
 
   if (!candidate) return <p>No candidate found with id: {id}</p>;
 
-  const [dateTime, setDateTime] = useState("");
   const date = new Date(dateTime);
 
   const options = {
