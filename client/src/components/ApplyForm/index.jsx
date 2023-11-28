@@ -31,6 +31,7 @@ const ApplyForm = ({ job }) => {
       setLastName('');
       setPhoneNumber('');
       setEmail('');
+      alert("Application sent successfully!");
     } catch (err) {
       console.error(err);
     }

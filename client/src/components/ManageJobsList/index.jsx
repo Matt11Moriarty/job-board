@@ -17,6 +17,7 @@ const ManageJobsList = () => {
         const { data } = await deleteJob({
             variables: {jobId: jobId},
         })
+        alert("Job deleted successfully!");
         window.location.reload();
     } catch (err) {
         console.error(err);
