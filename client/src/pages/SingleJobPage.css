@@ -30,3 +30,10 @@ h3 {
 .singleJobPage .applyForm {
     margin: 0 !important;
 }
+
+@media screen and (max-width:764px) {
+    .singleJobPage > div:nth-child(2) {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+  }

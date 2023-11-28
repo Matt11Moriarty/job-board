@@ -21,3 +21,9 @@
   padding: 6px 18px;
   width: max-content;
 }
+
+@media screen and (max-width:364px) {
+  .applyForm, form {
+    width: 100%;
+  }
+}
