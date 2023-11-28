@@ -1,10 +1,12 @@
 import React from 'react';
 import './HomeAbout.css';
+import Image from '../../assets/images/teamwork.jpg'; 
 
 const About = () => {
     return (
         <section id="about">
             <h2>About Our Platform</h2>
+            <img src={Image} alt="teamwork" />
             <p>
                 Welcome to our job board web application, a dedicated platform designed for businesses to manage their job postings with ease. As a business, you can post job vacancies, manage applications, access candidate profiles, and schedule interviews seamlessly.
             </p>

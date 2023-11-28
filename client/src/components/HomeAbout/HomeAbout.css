@@ -18,3 +18,8 @@
     margin: 0 auto;
     color: black;
 }
+
+#about img {
+    width: 25%;
+    margin: 20px;
+}

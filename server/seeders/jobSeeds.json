@@ -2,52 +2,52 @@
     {
       "jobTitle": "Chef",
       "salary": 60000,
-      "jobDescription": "Responsible for preparing and cooking delicious meals."
+      "jobDescription": "As a Chef, you will be responsible for preparing and cooking delicious meals. Prerequisites for this position include a culinary school diploma or equivalent experience. Required skills include meal preparation, menu planning, and knowledge of food safety. Must be able to work weekends and holidays."
     },
     {
       "jobTitle": "Waiter",
       "salary": 35000,
-      "jobDescription": "Provide excellent customer service to restaurant guests."
+      "jobDescription": "As a Waiter, you will provide excellent customer service to restaurant guests. Prerequisites for this position include a high school diploma or equivalent, and previous experience in a customer service role. Required skills include customer service, communication, and time management. Must be able to work in a fast-paced environment."
     },
     {
       "jobTitle": "Bartender",
       "salary": 45000,
-      "jobDescription": "Mix and serve beverages according to recipes and standards."
+      "jobDescription": "The Bartender is tasked with mixing and serving beverages in accordance with recipes and standards. Previous experience in a similar role is preferred."
     },
     {
       "jobTitle": "Dishwasher",
       "salary": 30000,
-      "jobDescription": "Ensure cleanliness and hygiene in the kitchen area."
+      "jobDescription": "The Dishwasher ensures the cleanliness and hygiene of the kitchen area. No prior experience is required, but a strong work ethic is a must."
     },
     {
       "jobTitle": "Manager",
       "salary": 70000,
-      "jobDescription": "Manage restaurant operations and staff."
+      "jobDescription": "The Manager oversees restaurant operations and staff. Previous management experience in a restaurant setting is required."
     },
     {
       "jobTitle": "Host/Hostess",
       "salary": 32000,
-      "jobDescription": "Greet and seat guests, manage reservations."
+      "jobDescription": "The Host/Hostess greets and seats guests and manages reservations. Excellent communication skills and a friendly demeanor are required."
     },
     {
       "jobTitle": "Server",
       "salary": 38000,
-      "jobDescription": "Take and deliver food and beverage orders."
+      "jobDescription": "The Server takes and delivers food and beverage orders. Previous experience in a similar role and excellent customer service skills are required."
     },
     {
       "jobTitle": "Busser",
       "salary": 31000,
-      "jobDescription": "Clear and clean tables, assist servers."
+      "jobDescription": "The Busser clears and cleans tables and assists servers. A strong work ethic and the ability to work in a fast-paced environment are required."
     },
     {
       "jobTitle": "Kitchen Staff",
       "salary": 34000,
-      "jobDescription": "Assist in various kitchen tasks."
+      "jobDescription": "The Kitchen Staff assists in various kitchen tasks. No prior experience is required, but a strong work ethic is a must."
     },
     {
       "jobTitle": "Sous Chef",
       "salary": 55000,
-      "jobDescription": "Assist the head chef in kitchen management."
+      "jobDescription": "The Sous Chef assists the Head Chef in managing the kitchen, including meal preparation, menu planning, and ensuring food safety standards are met. Previous experience in a similar role is required."
     }
   ]
   
