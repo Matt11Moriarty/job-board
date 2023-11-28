@@ -52,12 +52,14 @@ export const REMOVE_USER = gql`
 `;
 
 export const REMOVE_JOB = gql`
-  mutation removeJob($jobId: ID!) {
-    removeJob(jobId: $jobId) {
-      _id
-      jobTitle
-    }
+mutation removeJob($jobId: ID!) {
+  removeJob(jobId: $jobId) {
+    _id
+    jobTitle
+    salary
+    jobDescription
   }
+}
 `;
 
 export const REMOVE_CANDIDATE = gql`
