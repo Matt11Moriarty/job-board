@@ -17,7 +17,7 @@ const Header = ({ isLoggedIn }) => {
             {isLoggedIn && <li><Link to="/create-users">Create Users</Link></li>}
             {isLoggedIn && <li><Link to="/job-applications">Job Applications</Link></li>}
             {isLoggedIn && <li><Link to="/post-jobs">Manage Jobs</Link></li>}
-            {!isLoggedIn && <li><Link to='login'>Login</Link> </li>}
+            {!isLoggedIn && <li><Link to='login'>Admin Login</Link> </li>}
             {isLoggedIn && <li id="logout" onClick={auth.logout}>Logout</li>}
           </ul>
         </nav>

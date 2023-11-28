@@ -4,7 +4,7 @@ import CreateUserForm from '../components/AdminCreateUser'
 const CreateUsers = () => {
     return (
         <div>
-            <h1>Create Users Here</h1>
+            <h1>Create User</h1>
             <CreateUserForm />
         </div>
     )
