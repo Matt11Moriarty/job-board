@@ -20,6 +20,7 @@ const CreateUserForm = () => {
             })
             setUserName('');
             setPassword('');
+            alert("User created successfully!");
         } catch (err) {
             console.error(err);
         }
