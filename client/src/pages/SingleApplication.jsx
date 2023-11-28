@@ -3,33 +3,27 @@ import { useParams } from "react-router-dom";
 import { useQuery, gql } from "@apollo/client";
 
 const GET_CANDIDATE = gql`
-  query Query {
-    getAllCandidates {
-      _id
-      firstName
-      lastName
-      email
-      phoneNumber
-      job {
-        jobDescription
-        jobTitle
-        salary
-      }
-    }
+query Query($candidateId: ID!) {
+  getSingleCandidate(candidateId: $candidateId) {
+    firstName
+    lastName
+    phoneNumber
+    email
   }
+}
+
 `;
 
 const SingleApplication = () => {
   const { id } = useParams();
-  const { loading, error, data } = useQuery(GET_CANDIDATE);
-  const [dateTime, setDateTime] = useState("");
+  const { loading, error, data } = useQuery(GET_CANDIDATE, {
+    variables: { candidateId: id },
+  });  const [dateTime, setDateTime] = useState("");
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error :(</p>;
 
-  const candidate = data.getAllCandidates.find(
-    (candidate) => candidate._id === id
-  );
+  const candidate = data?.getSingleCandidate;
 
   if (!candidate) return <p>No candidate found with id: {id}</p>;
 

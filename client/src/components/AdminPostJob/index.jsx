@@ -25,6 +25,7 @@ const CreateJobForm = () => {
             setJobTitle('');
             setSalary('');
             setJobDescription('');
+            window.location.reload();
         } catch (err) {
             console.error(err);
         }

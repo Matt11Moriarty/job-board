@@ -15,8 +15,9 @@ const ManageJobsList = () => {
   const handleDeleteJob = async (jobId) => {
     try {
         const { data } = await deleteJob({
-            variables: {jobId: jobId}
+            variables: {jobId: jobId},
         })
+        window.location.reload();
     } catch (err) {
         console.error(err);
     }
