@@ -18,7 +18,7 @@ const SingleApplication = () => {
   const { id } = useParams();
   const { loading, error, data } = useQuery(GET_CANDIDATE, {
     variables: { candidateId: id },
-  });  const [dateTime, setDateTime] = useState("");
+  }); const [dateTime, setDateTime] = useState("");
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error :(</p>;
@@ -59,6 +59,7 @@ const SingleApplication = () => {
       if (response.ok) {
         const result = await response.json();
         console.log(result);
+        alert("Message sent successfully!");
       } else {
         const errorText = await response.text();
         console.error("Error", errorText);
