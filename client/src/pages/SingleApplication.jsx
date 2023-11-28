@@ -3,20 +3,15 @@ import { useParams } from "react-router-dom";
 import { useQuery, gql } from "@apollo/client";
 
 const GET_CANDIDATE = gql`
-  query Query {
-    getAllCandidates {
-      _id
-      firstName
-      lastName
-      email
-      phoneNumber
-      job {
-        jobDescription
-        jobTitle
-        salary
-      }
-    }
+query Query($candidateId: ID!) {
+  getSingleCandidate(candidateId: $candidateId) {
+    firstName
+    lastName
+    phoneNumber
+    email
   }
+}
+
 `;
 
 const SingleApplication = () => {

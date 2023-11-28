@@ -1,5 +1,4 @@
 import React from "react";
-import candidates from "../../../../server/seeders/candidateSeeds.json";
 import "./ApplicationList.css";
 import { useNavigate } from "react-router-dom";
 import { useQuery, gql } from "@apollo/client";
