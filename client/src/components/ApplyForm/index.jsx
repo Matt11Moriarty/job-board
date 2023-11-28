@@ -62,33 +62,3 @@ const ApplyForm = ({ job }) => {
 
 export default ApplyForm;
 
-  // const handleSubmit = async (event) => {
-  //   event.preventDefault();
-
-  //   //THIS WILL NEED TO CHANGE WHEN DEPLOYED
-  //   const endpoint = 'http://localhost:3001/send-message';
-
-  //   try {
-  //     const response = await fetch(endpoint, {
-  //       method: 'POST',
-  //       headers: {
-  //         'Content-Type': 'application/json'
-  //       },
-  //       body: JSON.stringify({
-  //         phoneNumber: phone,
-  //         messageBody: 'Come in for an interview'
-  //       })
-  //     });
-      
-  //     if (response.ok) {
-  //       const result = await response.json();
-  //       console.log(result);
-  //     } else {
-  //       const errorText = await response.text();
-  //       console.error('Error', errorText);
-  //     }
-
-  //   } catch (error) {
-  //     console.error('Error submitting form: ', error)
-  //   }
-  // }
