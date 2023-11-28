@@ -22,12 +22,12 @@ query GetAllCandidates {
 
 const AllApplications = ({ filter, search }) => {
     const navigate = useNavigate();
-    const { loading, error, data } = useQuery(GET_CANDIDATES); // new line
+    const { loading, error, data } = useQuery(GET_CANDIDATES); 
   
-    if (loading) return <p>Loading...</p>; // new line
-    if (error) return <p>Error :(</p>; // new line
+    if (loading) return <p>Loading...</p>; 
+    if (error) return <p>Error :(</p>; 
   
-    const candidates = data.getAllCandidates; // new line
+    const candidates = data.getAllCandidates; 
   
     const candidatesByName = [...candidates].sort((a, b) =>
       a.firstName.localeCompare(b.firstName)
@@ -38,8 +38,8 @@ const AllApplications = ({ filter, search }) => {
   
     let filteredCandidates;
   
-    const handleRowClick = (firstName) => {
-      navigate(`/job-applications/${firstName.toLowerCase()}`);
+    const handleRowClick = (id) => {
+      navigate(`/job-applications/${id}`);
     };
 
     switch (filter) {
@@ -73,7 +73,7 @@ const AllApplications = ({ filter, search }) => {
       </thead>
       <tbody>
         {filteredCandidates.map((candidate, index) => (
-          <tr key={index} onClick={() => handleRowClick(candidate.firstName)}>
+          <tr key={index} onClick={() => handleRowClick(candidate._id)}>
             <td>
               {candidate.firstName} {candidate.lastName}
             </td>
