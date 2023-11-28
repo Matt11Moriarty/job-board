@@ -6,10 +6,10 @@
   "scripts": {
     "start": "node server/server.js",
     "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
-    "install": "cd server && npm i && cd ../client && npm i",
+    "install": "cd server && npm i && cd ../client && npm i --production=false",
     "seed": "cd server && npm run seed",
     "build": "cd client && npm run build",
-    "render-build":"npm install && npm run build"
+    "render-build": "npm install && npm run build"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +20,7 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.18.2",
+    "graphql": "^16.8.1",
     "node": "^21.1.0",
     "twilio": "^4.19.0"
   }
