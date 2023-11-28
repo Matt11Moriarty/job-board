@@ -16,15 +16,14 @@ query Query($candidateId: ID!) {
 
 const SingleApplication = () => {
   const { id } = useParams();
-  const { loading, error, data } = useQuery(GET_CANDIDATE);
-  const [dateTime, setDateTime] = useState("");
+  const { loading, error, data } = useQuery(GET_CANDIDATE, {
+    variables: { candidateId: id },
+  });  const [dateTime, setDateTime] = useState("");
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error :(</p>;
 
-  const candidate = data.getAllCandidates.find(
-    (candidate) => candidate._id === id
-  );
+  const candidate = data?.getSingleCandidate;
 
   if (!candidate) return <p>No candidate found with id: {id}</p>;
 

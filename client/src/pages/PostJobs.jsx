@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import CreateJobForm from '../components/AdminPostJob'
 import ManageJobsList from "../components/ManageJobsList";
 
