@@ -1,5 +1,6 @@
 import React from "react";
 import CreateUserForm from '../components/AdminCreateUser'
+import "./CreateUsers.css";
 
 const CreateUsers = () => {
     return (

@@ -2,12 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
 import auth from '../../utils/auth';
+import LogoImage from '../../assets/images/logo-here.png';
 
 const Header = ({ isLoggedIn }) => {
   return (
     <header className="header">
       <div>
-        <h1 className="logo">Company Logo</h1>
+      <img src={LogoImage} alt="Company Logo" className="logo" />
         <input type="checkbox" id="mobile-button" />
         <label htmlFor="mobile-button">Menu</label>
         <nav>
