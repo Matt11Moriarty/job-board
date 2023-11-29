@@ -31,7 +31,7 @@ const ManageJobsList = () => {
           <h2>{job.jobTitle}</h2>
           <p>Salary: {job.salary}</p>
           <p>{job.jobDescription}</p>
-          <button className='btn light bg-warning' onClick={() => handleDeleteJob(job._id)}>Delete Job</button>
+          <button onClick={() => handleDeleteJob(job._id)}>Delete Job</button>
         </a>
       ))}
     </div>

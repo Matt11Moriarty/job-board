@@ -58,6 +58,11 @@ h1 {
   font-weight: 700;
 }
 
+p {
+  font-size: 1.15em;
+  font-weight: 500;
+}
+
 .applyForm input[type="submit"], button, .btn-success  {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -67,6 +72,11 @@ h1 {
   background-color: var(--lightorange);
   color: var(--silver);
   cursor: pointer;
+  transition: .15s ease-in-out;
+}
+
+.applyForm input[type="submit"]:hover, button:hover, .btn-success:hover {
+  transform: scale(1.1);
 }
 
 button:focus,
@@ -87,8 +97,11 @@ button:focus-visible {
     background-color: var(--darkblue);
   }
 
-  .jobItem:hover, .jobItem:hover p {
+  .jobItem:hover {
     background-color: var(--darkblue);
+  }
+
+  .jobItem:hover, .jobItem:hover p {
     color: var(--silver);
   }
 
@@ -98,6 +111,11 @@ button:focus-visible {
 
   .jobDetails p, .jobDetails strong {
     color: var(--silver)
+  }
+
+  #about, #about p {
+    color: var(--silver);
+    background-color: var(--darkblue);
   }
 }
 
@@ -114,8 +132,11 @@ button:focus-visible {
     background-color: var(--brown);
   }
 
-  .jobItem:hover, .jobItem:hover p {
+  .jobItem:hover {
     background-color: var(--silver);
+  }
+
+  .jobItem:hover, .jobItem:hover p {
     color: var(--darkblue);
   }
 
@@ -125,5 +146,10 @@ button:focus-visible {
 
   .jobDetails p, .jobDetails strong {
     color: var(--darkblue)
+  }
+
+  #about, #about p {
+    color: var(--darkblue);
+    background-color: var(--silver);
   }
 }

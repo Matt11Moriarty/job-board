@@ -2,13 +2,13 @@
   width: calc(100% - 304px);
   height: 100%;
   overflow: auto;
-  padding: 24px;
+  padding: 48px;
   margin-left: 24px;
 }
 
 .jobDetails p {
   margin-bottom: 36px;
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 
 .jobDetails p:last-child {

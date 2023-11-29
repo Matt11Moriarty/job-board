@@ -22,9 +22,10 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     width: 100%;
     margin: auto;
+    max-width: 720px;
 }
 
 .singleJobPage .applyForm {

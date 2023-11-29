@@ -1,13 +1,11 @@
 .jobList {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: space-between;
   width: calc(100% - 40px);
   margin: 20px;
   padding: 20px;
   text-decoration: none;
-
 }
 
 .jobItem {
@@ -31,7 +29,22 @@
   font-weight: 600;
 }
 
+.jobItem p {
+  text-align: left;
+  margin-bottom: 36px;
+}
+
+.jobItem, .jobItem p {
+  transition: .15s ease-in-out;
+}
+
 @media screen and (max-width:1064px) {
+  .jobList {
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+  }
+
   .jobItem {
     width: 100%;
   }
